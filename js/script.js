@@ -72,7 +72,7 @@ function render_edit_box(type, employee, index){
     }
 
 
-    var html = '<div><label>name</label><input id="edit_name" value="' + pre_name + '"></div><div><label>phone</label> <input id="edit_phone" value="'+ pre_phone + '"></div><div><label>address</label> <input id="edit_address" value="'+ pre_address + '"></div>';
+    var html = '<div class="field"><label>name</label><input id="edit_name" value="' + pre_name + '"></div><div class="field"><label>phone</label> <input id="edit_phone" value="'+ pre_phone + '"></div><div class="field"><label>address</label> <input id="edit_address" value="'+ pre_address + '"></div>';
 
     var button_name = type == "add" ? "add it" : "update it";
 
@@ -85,7 +85,7 @@ function render_edit_box(type, employee, index){
         var e = {
             name : $("#edit_name").val(),
             phone: $("#edit_phone").val(),
-            phone: $("#edit_address").val()
+            address: $("#edit_address").val()
         }
         if(type=="add") {
             add_employee(e);
