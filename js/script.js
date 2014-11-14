@@ -36,11 +36,11 @@ $(document).ready(function(){
     $("#add").click(function() {
         console.log('clicked!');
         render_edit_box('add');
+        $( "#edit_box" ).slideDown( "1000");
     });
 
-
-
 })
+
 
 
 function terminate_employee(index){
@@ -68,7 +68,7 @@ function render_edit_box(type, employee, index){
 
         pre_name = employee.name;
         pre_phone = employee.phone;
-        pre_phone = employee.address;
+        pre_address = employee.address;
     }
 
 
@@ -93,7 +93,7 @@ function render_edit_box(type, employee, index){
         else if (type=="edit") {
             update_employee(e, index);
         }
-
+        $( "#edit_box" ).slideUp( "1000");
         $("#edit_box").html('');
 
     })

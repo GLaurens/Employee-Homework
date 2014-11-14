@@ -12,22 +12,23 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src='js/script.js'></script>
     <style>
-    .form-container {margin:20px auto; background-color: light darkgrey; border: 2px solid; width: 100%; padding: 20px;
-        border-radius: 25px;}
+        body {background-image: url("images/mountains.jpg"); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;}
+    .form_container {margin:20px auto; background-color: light darkgrey; border: 2px solid; padding: 20px;
+        border-radius: 25px;align-content: center; width: 75%; background-color: azure; opacity:0.6;}
         table td { padding: 5px ; border: 1px solid black;}
         #add {margin-top: 20px;}
-        #edit_box { background-color: linen; border-radius: 15px; margin-top: 20px; }
+        #edit_box { background-color: linen; border-radius: 15px; margin-top: 20px;opacity:0.6; display: none; width: 60% }
     #saveit { margin-left: 20px; margin-bottom: 20px;}
     .field { margin:5px; padding-top: 10px;}
     label{
         width: 70px;
         text-align: right; margin-right: 20px
     }
-
-    }</style>
+        footer {background-color:#333;height:30px; width: 100%;position: absolute; bottom:0; }
+    </style>
 </head>
 <body>
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-inverse" role="navigation">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -46,7 +47,7 @@
                 <li class="active"><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="#">Action</a></li>
                         <li><a href="#">Another action</a></li>
@@ -71,20 +72,21 @@
     </div><!-- /.container-fluid -->
 </nav>
 <div class="container">
-    <div class="row"><div class="col-md-2"></div><div class="col-md-6"><div class="form-container"><div class="page-header">
+    <div class="row"><div class="col-md-12"><div class="form_container"><div class="page-header">
         <h1>Employee List!</h1>
     </div>
 
         <div id="employee_list"></div>
         <button id="add">Add Employee</button>
         <div id = "edit_box">
-        </div></div></div><div class="col-md-2"></div>
-    </div>
-
-
+        </div></div></div>
 
 
 </div>
-<div class="col-md-4"></div>
+    </div>
+<footer>
+
+</footer>
+
 </body>
 </html>
